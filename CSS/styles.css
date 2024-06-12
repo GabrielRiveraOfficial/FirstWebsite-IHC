@@ -1,0 +1,263 @@
+h1{
+    color:blue;
+    text-align: center;
+}
+
+h3{
+    color: blue;
+}
+
+body{
+    margin-left:70px;
+    margin-right: 30px;
+}
+
+.form1 .texto_form1 form{
+    text-align: center;
+}
+
+.form1 .texto_form1 > h2{
+    text-align: center;
+    color: red;
+}
+
+.form1 .texto_form1 form > input{
+    width: 300px;
+}
+
+.menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu_horizontal > li > a:hover{
+    color: red;
+}
+
+.menu_horizontal li:hover{
+    background-color: white;
+}
+
+.menu_vertical{
+    padding-left: 0px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color:white;
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+
+.menu_vertical li:hover{
+    background-color: black;
+}
+.menu_vertical li>a:hover{
+    color: white;
+}
+
+.menu_vertical >li>a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.menu_horizontal span{
+    padding: 12px;
+}
+
+.top_header{
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;/*ancho*/
+    z-index: 100;
+    height: 90px;
+    
+}
+
+#inicio{
+    background: url(../img/background_image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    color: white;
+    width: 100%;
+}
+
+.container_inicio{
+    margin-top: 0px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.texto_inicio{
+    padding-left: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    color:blue;
+    
+}
+
+.texto_inicio >h2{
+    text-align: left;
+    color: red;
+}
+
+.texto_inicio > ul> li{
+    list-style: none;
+}
+
+/*ReDES SOCIALES*/
+/*
+.container_social_media > ul {
+    padding-top: 50px;
+    padding-left: 0px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+}*/
+
+.container_social_media{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -115px;
+    top: 200px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.social_media li{
+    list-style-type: none;
+    background-color: white;
+    color: blue;
+    height: 30px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin: 0px 0px 0px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.social_media li:hover{
+    margin-left: -100px;
+    
+}
+
+.social_media li img{
+    float: left;
+    margin: 5px 5px;
+    margin-right: 5px;
+}
+
+.social_media li p{
+    padding-top: 15px;
+    margin: 0px;
+    line-height:  16px;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.social_media li p a {
+    text-decoration:none;
+    color: darkblue;
+}
+
+/*HTML*/
+.container_html {
+    text-align: center;
+}
+
+.texto_html p{
+    text-align: left;
+}
+
+.texto_html h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+#html.texto_html {
+    text-align: left;
+    font-size: 330px;
+}
+
+#html{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.texto_html h4{
+    text-align: left;
+}
+
+.texto_html ul{
+    text-align: left;
+}
+
+
+/*Formulario Inscripcion*/
+#form{
+    border: 1px solid #b703ff;
+    width: 600px;
+    margin:auto
+}
+
+#form legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#form ol{
+    list-style: none;
+}
+
+#form ol li{
+    padding-bottom: 10px;
+}
+
+#form ol li label{
+    width: 100px;
+    float: left;
+    text-align: left;
+}
+
+#form input[type=text] {
+    border: 1px solid #b703ff 
+}
+
+#form input.btn{
+    padding: 5px;
+    background-color: darkorange;
+    color: black;
+    border: 1px solid #b703ff 
+}
+
+#inscripcion{
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
