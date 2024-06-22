@@ -1,29 +1,36 @@
-<!--https://stackoverflow.com/questions/30557915/is-it-good-idea-to-make-separate-css-file-for-each-html-page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel = "stylesheet" href="CSS/styles.css">
+    <link rel = "stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <div class="form1">
-        <div class="texto_form1">
-            <h2>Contactanos!</h2>
-          
-            <form action="HMTL/index.html">
-              <label for="name">Nombres y Apellidos:</label><br>
-              <input type="text" id="name" name="name" value="John Titor"><br><br>
-              <label for="phone">Telefono:</label><br>
-              <input type="text" id="phone" name="phone" value="999999999"><br><br>
-              <label for="email">Correo:</label><br>
-              <input type="text" id="email" name="email" value="john_titor@mail.dom"><br><br>
-              <label for="content">Asunto:</label><br>
-              <input type="text" id="content" name="content" value="¿Que es lo que nos quiere contar?"><br><br>
-              <input type="submit" value="Enviar">
-            </form> 
+
+    <div id="contacto">
+        <div class="container_contacto">
+            <form name="frm" method="post" action="">
+                <fieldset id="form_contacto">
+                    <legend>Contactanos!</legend>
+                    <ol>
+                        <li><label>Nombres y Apellidos: </label><input type="text" name="flname" value="John Titor" size="30"></li>
+                        <li><label>Telefono: </label><input type="text" name="fphone" value="999999999" size="30"></li>
+                        <li><label>Correo: </label><input type="text" name="femail" value="john_titor@mail.dom" size="30"></li>
+                        <li><label for="content">Asunto:</label>
+                        <input type="text" id="content" name="fcontent" value="¿Que es lo que nos quiere contar?"><br><br></li>
+                    </ol>
+                    <p><input type="submit" class="btn" value="Enviar"/></p>
+                </fieldset>
+            </form>
         </div>
     </div>
+
+    <div class="contenido_contactanos">
+        <li><a href="../index.html">Volver a la Landing Page</a></li>
+    </div>
+
+    <script src="../JS/contactanos.js"></script>
 </body>
+
 </html>

@@ -1,10 +1,10 @@
-<!DOCTYPE html> <!--Entrar a W3Schools para aprender más-->
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CURSO DE IHC Y TECNOLOGIAS MOVILES</title>
-    <link rel = "stylesheet" href="CSS/styles.css"><!--Aqui le quite el ../-->
+    <link rel = "stylesheet" href="CSS/styles.css">
     <link rel = "stylesheet" href="CSS/fonts.css">
     
 </head>
@@ -26,7 +26,7 @@
                 <ul class="menu_vertical">
                     <li><a href="#html">HTML</a></li>
                     <li><a href="#css">CSS</a></li>
-                    <li><a href="#javascript">Java Script</a></li>
+                    <li><a href="#js">Java Script</a></li>
                 </ul>
             </li>
             <li><a href="#inscripcion"><span class="icon-profile"></span>Inscripcion</a></li>
@@ -74,6 +74,10 @@
             <div class = "texto_css">
                 <h3>Definicion de CSS</h3>
                 <p>Cascading Style Sheets (CSS) es un lenguaje de programación que sirve para determinar el diseño de los documentos electrónicos. Con la ayuda de unas sencillas instrucciones -presentadas en forma de código fuente claro-, los elementos del sitio web, como el diseño, el color y la tipografía, pueden adaptarse como se desee. Gracias a las hojas de estilo en cascada, la estructura semántica y el contenido del documento no se ven afectados. CSS surgió a mediados de la década de 1990 y ahora se considera el lenguaje de hojas de estilo estándar en Internet.</p>
+                <video controls>
+                    <source src="video/css.mp4" type="video/mp4">
+                </video>
+                
                 <h4>Más info</h4>
                 <ul>
                     <li> <a href="https://www.ionos.es/digitalguide/paginas-web/diseno-web/que-es-css/" target="_blank">IONOS</a> </li>
@@ -82,11 +86,15 @@
         </div>
     </div>
 
-    <div id= "javascript">
-        <div class = "container_javascript">
-            <div class = "texto_javascript">
+    <div id= "js">
+        <div class = "container_js">
+            <div class = "texto_js">
                 <h3>Definicion de Java Script</h3>
                 <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web. Como lenguaje de scripting del lado del servidor, se trata de una de las principales tecnologías de la World Wide Web. Por ejemplo, al navegar por Internet, en cualquier momento en el que vea un carrusel de imágenes, un menú desplegable “click-to-show” (clic para mostrar), o cambien de manera dinámica los elementos de color en una página web, estará viendo los efectos de JavaScript.</p>
+                <video controls>
+                    <source src="video/js.mp4" type="video/mp4">
+                </video>
+
                 <h4>Más info</h4>
                 <ul>
                     <li> <a href="https://aws.amazon.com/es/what-is/javascript/" target="_blank">AMAZON WEB SERVICES</a> </li>
@@ -95,34 +103,28 @@
         </div>
     </div>
 
-    <!--Inscripcion-->  
-    <!--Averiguar como conectar este formulario a una tabla dentro de una base de datos, recomendacion del profe-->  
+    <!-- INSCRIPCION -->
     <div id="inscripcion">
         <div class="container_inscripcion">
             <form name="frm" method="post" action="">
                 <fieldset id="form">
-                    <legend>Formulario de Inscripcion</legend> 
+                    <legend>Formulario de Inscripcion</legend>
                     <ol>
-                        <li><label>Nombres:</label><input type="text" name="fname" size="30"></li>
-                        <li><label>Apellido:</label><input type="text" name="flastname" size="30"></li>
-                        <li><label>Sexo:</label><input type="radio" name="fsex" value = "H"/>Hombre 
-                                                <input type="radio" name="fsex" value = "F"/>Mujer</li>
-                        <li><label>E-Mail:</label><input type="text" name="femail" size="30"></li>
-                        <li><label>Celular:</label><input type="text" name="fphone" size="30"></li>
-                        <li><label>Curso:</label><input type="text" name="fcourse" size="30"></li>
-                        <li><label>Elegir Curso:</label></li>
-                        <label for="cursos">Choose a pet:</label>
-                            <select name="cursos_options" id="cursos">
-                              <option value="">--HTML--</option>
-                              <option value="HTML">HTML</option>
-                              <option value="CSS">CSS</option>
-                              <option value="JS">JavaScript</option>
-                              <option value="parrot">Parrot</option>
-                              <option value="spider">Spider</option>
-                              <option value="goldfish">Goldfish</option>
+                        <li><label>Nombres: </label><input type="text" name="fname" size="30"></li>
+                        <li><label>Apellidos: </label><input type="text" name="flastname" size="30"></li>
+                        <li><label>Telefono: </label><input type="text" name="fphone" size="30"></li>
+                        <li><label>Correo: </label><input type="text" name="femail" size="30"></li>
+                        <li><label>Sexo: </label><input type="radio" name="fsex"value="H">Hombre
+                            <input type="radio" name="fsex"value="M">Mujer</li>
+                        <li><label>Elegir Curso:</label>
+                            <select>
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>JavaScript</option>
                             </select>
+                        </li>
                     </ol>
-                        <p align="center"><input type="submit" class="btn" value="Enviar"</p>
+                    <p><input type="submit" class="btn" value="Enviar"/></p>
                 </fieldset>
             </form>
         </div>
@@ -174,5 +176,60 @@
 
     </div>
 
+    <footer id="footer">
+        <div class="Container_footer">
+            <div class="Texto_footer">
+                <h4>UPC</h4>
+                <p>Universidad Peruana de Ciencias Aplicadas</p>
+            </div>
+            <div class="Texto_footer">
+                <h4>Direccion</h4>
+                <ul>
+                    <li>Direccion: 542, Av. El dervy 254</li>
+                    <li>Santiago de Surco 15023</li>
+                    <li>Telef.:(01) 6303333</li>
+    
+                </ul>
+    
+            </div>
+            <div class="Texto_footer">
+                <h4>Mas Informacion</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#inscripcion">Inscripcion</a></li>
+                    <li><a href="HMTL/contactanos.html">Contacto</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <div class="Convers_footer">
+                <h4>Conversemos</h4>
+                <ul>
+                    <li><a href="https://web.telegram.org" target="_blank"><img src="img/icons/icons8-telegram-app.svg"  width="48" height="48"></a></li>
+                    <li><a href="https://www.whatsapp.com" target="_blank"><img src="img/icons/icons8-whatsapp.svg"  width="48" height="48"></a></li>
+    
+                </ul>
+            </div>
+    
+    
+        </div>
+        <div class="Creds_footer">
+            <div class="Copy_Right">
+                <p>@2024 Todos los derechos reservados</p>
+            </div>
+            <div class="Legal_Footer">
+                <ul>
+                    <li><a href="">Politica de Privacidad</a></li>
+                    <li><a href="">Politica de Cookies</a></li>
+                    <li><a href="">Aviso Legal</a></li>
+    
+                </ul>
+            </div>
+        </div>
+    
+    </footer>
+    <script src="JS/main.js"></script>
 </body>
 </html>

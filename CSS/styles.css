@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* colocar la fuente externa en el top header*/
 
 h1{
     color:blue;
@@ -15,19 +14,60 @@ body{
     margin-right: 30px;
 }
 
-.form1 .texto_form1 form{
-    text-align: center;
+/*Form Contacto*/
+#contacto{
+    padding-left: 0px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    width: 600px;
+    margin:auto;
 }
 
-.form1 .texto_form1 > h2{
+.contenido_contactanos li a{
+    text-decoration: none;
+}
+
+#form_contacto{
+    border: 1px solid #b703ff;
+}
+
+#form_contacto legend{
     text-align: center;
     color: red;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.form1 .texto_form1 form > input{
-    width: 300px;
+#form_contacto input.btn{
+    width: 200px;
+    padding: 5px;
+    background-color: darkorange;
+    color: black;
+    border: 1px solid #b703ff;
+    border-radius: 15%;
+    margin-left: 300px;
 }
 
+#form_contacto input[type=text] {
+    border: 1px solid #b703ff;
+    width: 200px;
+}
+
+#form_contacto ol{
+    list-style: none;
+}
+
+#form_contacto ol li{
+    padding-bottom: 30px;
+}
+
+#form_contacto ol li label{
+    width: 100px;
+    float: left;
+    text-align: left;
+}
+
+/*Index*/
 .menu_horizontal{
     list-style: none;
     display: flex;
@@ -223,6 +263,77 @@ body{
 }
 
 
+/*CSS*/
+.container_css {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.texto_css p{
+    text-align: left;
+}
+
+.texto_css h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+#css.texto_css {
+    text-align: left;
+    font-size: 330px;
+}
+
+#css{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.texto_css h4{
+    text-align: left;
+}
+
+.texto_css ul{
+    text-align: left;
+    margin: 0px;
+}
+
+/*JS*/
+.container_js {
+    text-align: center;
+}
+
+.texto_js p{
+    text-align: left;
+}
+
+.texto_js h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+#js.texto_js {
+    text-align: left;
+    font-size: 330px;
+}
+
+#js{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.texto_js h4{
+    text-align: left;
+}
+
+.texto_js ul{
+    text-align: left;
+    margin: 0px;
+}
+
 /*Formulario Inscripcion*/
 #form{
     border: 1px solid #b703ff;
@@ -257,10 +368,92 @@ body{
     padding: 5px;
     background-color: darkorange;
     color: black;
-    border: 1px solid #b703ff 
+    border: 1px solid #b703ff;
+    border-radius: 15%;
+    margin-left: 280px;
 }
 
 #inscripcion{
     padding-top: 120px;
     padding-bottom: 200px;
+}
+
+
+
+
+/* Pie de pagina */
+#footer{
+    background-color: #636363;;
+    color: white;
+    padding: 30px 0 30px 0px;
+    margin:0;
+    display: block;
+}
+
+#footer ul{
+    padding: 0;
+}
+
+#footer li{
+    list-style: none;
+}
+
+.Container_footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    column-gap: 5%;
+
+}
+
+
+.Container_footer h4{
+    margin: 1rem 0;
+    width: 100%;
+    display: block;
+    background: #4A4A4A;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    line-height: 26px;
+    padding-left: 4px;
+    margin-bottom: 3px;
+}
+
+.Container_footer li a{
+    color:white;
+}
+.Convers_footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Convers_footer img{
+    width: 32px;
+    height: 32px;
+}
+
+.Convers_footer li{
+margin-right: 1rem;
+}
+
+.Creds_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: white;
+    margin-right: 0 auto;
+    max-width: 1200px;
+}
+
+.Legal_Footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Legal_Footer ul li{
+    padding-right: 1rem;
+    color: white;
+}
+.Legal_Footer ul a{
+    color:white;
+    font-size: 1rem;
 }
